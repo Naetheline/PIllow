@@ -8,7 +8,6 @@ import net.minecraft.pathfinding.PathType;
 import net.minecraft.state.properties.BedPart;
 import net.minecraft.stats.Stats;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -34,11 +33,6 @@ public class PillowBlock extends BedBlock {
         } else {
             return FOOT_SHAPE;
         }
-    }
-
-    @Override
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.SOLID;
     }
 
     @Override
